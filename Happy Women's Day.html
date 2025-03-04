@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://nikkuto.w3spaces.com/saved-from-Tryit-2025-03-04-lx0j3.html -->
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Women's Day</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: white;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.5em;
+            max-width: 600px;
+            animation: slideUp 2s ease-in-out;
+            line-height: 1.6;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .heart {
+            color: red;
+            font-size: 1.5em;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+        /* Hiệu ứng trái tim bay */
+        .floating-heart {
+            position: absolute;
+            color: red;
+            font-size: 20px;
+            animation: floatUp 4s infinite linear;
+        }
+        @keyframes floatUp {
+            from {
+                transform: translateY(100vh) scale(1);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(-10vh) scale(1.5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Chúc mừng Ngày Quốc tế Phụ nữ! 💐</h1>
+    <p>
+        Nhân ngày 8/3, mình chúc các bạn nữ luôn vui vẻ, hạnh phúc và rạng rỡ như những bông hoa xinh đẹp nhất!  
+    </p>
+    <p>
+        Mong rằng các bạn sẽ có một ngày thật ý nghĩa và tràn ngập yêu thương. <span class="heart">❤️</span>
+    </p>
+
+    <!-- Script tạo trái tim bay -->
+    <script>
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.classList.add("floating-heart");
+            heart.innerHTML = "❤️";
+            document.body.appendChild(heart);
+
+            // Vị trí xuất hiện ngẫu nhiên
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.top = "100vh";
+
+            // Kích thước trái tim ngẫu nhiên
+            const size = Math.random() * 20 + 10 + "px";
+            heart.style.fontSize = size;
+
+            // Thời gian bay ngẫu nhiên
+            const duration = Math.random() * 3 + 2;
+            heart.style.animationDuration = duration + "s";
+
+            setTimeout(() => {
+                heart.remove();
+            }, duration * 1000);
+        }
+
+        setInterval(createHeart, 300); // Tạo trái tim mới mỗi 0.3s
+    </script>
+
+
+
+
+
+<div class="floating-heart" style="left: 53.0806vw; top: 100vh; font-size: 14.3453px; animation-duration: 4.80707s;">❤️</div><div class="floating-heart" style="left: 42.1275vw; top: 100vh; font-size: 17.055px; animation-duration: 4.51044s;">❤️</div><div class="floating-heart" style="left: 2.53075vw; top: 100vh; font-size: 11.5403px; animation-duration: 4.2008s;">❤️</div><div class="floating-heart" style="left: 23.4276vw; top: 100vh; font-size: 22.9324px; animation-duration: 4.89111s;">❤️</div><div class="floating-heart" style="left: 8.39358vw; top: 100vh; font-size: 10.7776px; animation-duration: 4.14825s;">❤️</div><div class="floating-heart" style="left: 68.5991vw; top: 100vh; font-size: 18.2259px; animation-duration: 3.26442s;">❤️</div><div class="floating-heart" style="left: 20.2985vw; top: 100vh; font-size: 20.7764px; animation-duration: 2.74565s;">❤️</div><div class="floating-heart" style="left: 38.0956vw; top: 100vh; font-size: 23.8656px; animation-duration: 3.71858s;">❤️</div><div class="floating-heart" style="left: 12.1527vw; top: 100vh; font-size: 28.4397px; animation-duration: 3.37194s;">❤️</div><div class="floating-heart" style="left: 64.3662vw; top: 100vh; font-size: 12.2867px; animation-duration: 3.25685s;">❤️</div><div class="floating-heart" style="left: 56.937vw; top: 100vh; font-size: 27.0741px; animation-duration: 2.20011s;">❤️</div><div class="floating-heart" style="left: 66.8535vw; top: 100vh; font-size: 28.9379px; animation-duration: 4.25792s;">❤️</div><div class="floating-heart" style="left: 30.2848vw; top: 100vh; font-size: 19.5414px; animation-duration: 3.34891s;">❤️</div><div class="floating-heart" style="left: 48.7222vw; top: 100vh; font-size: 11.1031px; animation-duration: 2.38009s;">❤️</div><div class="floating-heart" style="left: 46.7124vw; top: 100vh; font-size: 28.4519px; animation-duration: 3.50334s;">❤️</div></body></html>
